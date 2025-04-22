@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Sora } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
+import { Navbar } from "@/components/elements/Navbar/Navbar";
 
 const ethnocentric = localFont({
   src: [
@@ -50,8 +51,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ethnocentric.variable} ${ttSquares.variable} ${soraSans.variable} antialiased`}
+        className={`${ethnocentric.variable} ${ttSquares.variable} ${soraSans.variable} antialiased min-h-screen max-w-[1920px] border border-accents-grey-4`}
+        suppressHydrationWarning
+        suppressContentEditableWarning
       >
+        <Navbar />
         {children}
       </body>
     </html>
