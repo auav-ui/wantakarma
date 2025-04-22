@@ -1,14 +1,39 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Sora } from "next/font/google";
+import localFont from "next/font/local";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
+const ethnocentric = localFont({
+  src: [
+    {
+      path: "../public/fonts/Ethnocentric.otf",
+      weight: "400",
+      style: "normal",
+    },
+  ],
+  variable: "--font-ethnocentric",
+  display: "swap",
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const ttSquares = localFont({
+  src: [
+    {
+      path: "../public/fonts/TTSquaresCondensed.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/TTSquaresCondensed Italic.ttf",
+      weight: "400",
+      style: "italic",
+    },
+  ],
+  variable: "--font-tt-squares",
+  display: "swap",
+});
+
+const soraSans = Sora({
+  variable: "--font-sora",
   subsets: ["latin"],
 });
 
@@ -25,7 +50,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ethnocentric.variable} ${ttSquares.variable} ${soraSans.variable} antialiased`}
       >
         {children}
       </body>
