@@ -1,4 +1,3 @@
-// types/navItems.ts
 export interface NavItem {
   label: string;
   href?: string;
@@ -10,24 +9,24 @@ export const NAVBAR_ITEMS: NavItem[] = [
   {
     label: "Profile",
     children: [
-      { label: "About Us", href: "/profile" },
+      { label: "About", href: "/" },
       {
         label: "Subteams",
         children: [
-          { label: "Vishmakarma", href: "/profile/vishmakarma" },
-          { label: "Antasena", href: "/profile/antasena" },
-          { label: "Wanderfalke", href: "/profile/wanderfalke" },
+          { label: "Vishmakarma", href: "/" },
+          { label: "Antasena", href: "/" },
+          { label: "Wanderfalke", href: "/" },
         ],
       },
     ],
   },
-  { label: "Management", href: "/management" },
-  { label: "Achievements", href: "/achievemnt" },
+  { label: "Management", href: "/" },
+  { label: "Achievements", href: "/" },
   {
     label: "Feeds",
     children: [
-      { label: "News", href: "/feeds" },
-      { label: "Gallery", href: "/feeds/gallery" },
+      { label: "News", href: "/" },
+      { label: "Gallery", href: "/" },
     ],
   },
   { label: "Contact Us", href: "/" },

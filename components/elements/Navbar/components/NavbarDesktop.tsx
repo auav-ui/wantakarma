@@ -12,7 +12,11 @@ import { NAVBAR_ITEMS, NavItem } from "../constants";
 const renderNavItem = (item: NavItem) => {
   if (item.children) {
     return (
-      <NavigationMenu key={item.label} className="hover:text-accents-yellow-3">
+      <NavigationMenu
+        key={item.label}
+        className="hover:text-accents-yellow-3"
+        viewportClassName="overflow-hidden hover:overflow-visible"
+      >
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>{item.label}</NavigationMenuTrigger>
