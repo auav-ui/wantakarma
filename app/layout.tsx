@@ -51,7 +51,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ethnocentric.variable} ${ttSquares.variable} ${soraSans.variable} antialiased min-h-screen max-w-[1920px] border border-accents-grey-4`}
+        className={`${ethnocentric.variable} ${ttSquares.variable} ${soraSans.variable} antialiased min-h-screen max-w-[1920px] mx-auto border border-accents-grey-4`}
         suppressHydrationWarning
         suppressContentEditableWarning
       >
