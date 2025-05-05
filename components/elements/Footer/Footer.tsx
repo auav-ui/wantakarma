@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer className="lg:h-[12.5rem] bg-accents-grey-4 flex max-lg:flex-col justify-between py-9 px-12 max-lg:gap-y-10">
       <div className="h-full w-fit flex flex-col max-lg:w-full max-lg:items-center justify-between">
-        <div className="w-80 lg:w-96">
+        <div className="w-80 lg:w-96 h-24">
           <img src="/logo.webp" alt="logo" className="object-contain h-full" />
         </div>
         <h1 className="max-lg:hidden text-h6 font-tt-squares font-bold">
