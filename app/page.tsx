@@ -1,10 +1,5 @@
-import { Button } from "@/components/ui/button";
-import Image from "next/image";
+import LandingModule from "@/modules/LandingModule";
 
 export default function Home() {
-  return (
-    <main className="min-h-screen flex justify-center items-center">
-      <Button>Hello</Button>
-    </main>
-  );
+  return <LandingModule />;
 }
