@@ -20,7 +20,7 @@ const renderNavItem = (item: NavItem) => {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>{item.label}</NavigationMenuTrigger>
-            <NavigationMenuContent className="px-4 text-text-light-1">
+            <NavigationMenuContent className="px-4 text-light-1">
               <ul>
                 {item.children.map((child) =>
                   child.children ? (
@@ -34,7 +34,7 @@ const renderNavItem = (item: NavItem) => {
                             <NavigationMenuTrigger>
                               {child.label}
                             </NavigationMenuTrigger>
-                            <NavigationMenuContent className="px-4 text-text-light-1">
+                            <NavigationMenuContent className="px-4 text-light-1">
                               <ul>
                                 {child.children.map((subChild) => (
                                   <li

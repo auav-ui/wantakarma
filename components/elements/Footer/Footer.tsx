@@ -12,12 +12,12 @@ const Footer = () => {
         </h1>
       </div>
       <div className="h-full w-fit flex flex-col max-lg:w-full max-lg:items-center justify-between max-sm:gap-y-4">
-        <h1 className="flex text-b5 sm:text-b4 font-sora text-center lg:text-right w-[17rem] sm:w-96 max-lg:-translate-x-4">
+        <h1 className="flex text-b5 sm:text-b4 font-sora text-center rounded lg:text-right w-[17rem] sm:w-96 max-lg:-translate-x-4">
           <MapPin className="shrink-0" />
           Pusgiwa UI, Gedung D Lt. 7, Jl. Prof. Dr. Fuad Hassan, Kukusan,
           Kecamatan Beji, Kota Depok, Jawa Barat 16425
         </h1>
-        <div className="flex max-lg:justify-center flex-row-reverse gap-x-4">
+        <div className="flex max-lg:justify-center flex-row-reverse gap-x-6">
           <a href="/">
             <img src="/vectors/facebook.svg" alt="facebook" />
           </a>
