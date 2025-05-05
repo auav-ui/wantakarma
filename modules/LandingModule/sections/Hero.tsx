@@ -34,8 +34,8 @@ const Hero = () => {
   }, []);
 
   return (
-    <section className="relative overflow-hidden min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)] mt-12 lg:mt-16 pr-4 sm:pr-8 lg:pr-16 py-20 2xl:py-36 flex items-end">
-      <div className="flex flex-col justify-end items-end gap-4 sm:gap-6 z-10">
+    <section className="relative overflow-hidden min-h-[calc(100vh-3rem)] lg:min-h-[calc(100vh-4rem)] mt-12 lg:mt-16 pr-4 sm:pr-8 lg:pr-16 py-20 2xl:py-36 flex items-center sm:items-end">
+      <div className="flex flex-col sm:justify-end items-end gap-4 sm:gap-6 z-10">
         <img src="/logo-landing.webp" alt="logo" className="min-w-80 w-5/12" />
         <h1 className="font-tt-squares max-sm:w-56 text-h6 sm:text-h4 text-right text-accents-yellow-3">
           Part Of Tim Robotika Universitas Indonesia

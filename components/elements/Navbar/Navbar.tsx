@@ -3,7 +3,7 @@ import NavbarDesktop from "./components/NavbarDesktop";
 import NavbarMobile from "./components/NavbarMobile";
 import Link from "next/link";
 
-export const Navbar = () => {
+const Navbar = () => {
   return (
     <nav className="fixed inset-0 h-12 lg:h-16 bg-accents-grey-4 py-3 px-6 lg:px-10 font-tt-squares flex justify-between items-center z-[9999]">
       <Link href="/" className="h-full">
@@ -14,3 +14,5 @@ export const Navbar = () => {
     </nav>
   );
 };
+
+export default Navbar;
