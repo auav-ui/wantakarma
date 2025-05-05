@@ -3,6 +3,7 @@ import { Sora } from "next/font/google";
 import localFont from "next/font/local";
 import "./globals.css";
 import { Navbar } from "@/components/elements/Navbar/Navbar";
+import Footer from "@/components/elements/Footer/Footer";
 
 const ethnocentric = localFont({
   src: [
@@ -57,6 +58,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   );

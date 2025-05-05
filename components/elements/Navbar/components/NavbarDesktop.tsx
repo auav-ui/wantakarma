@@ -28,7 +28,7 @@ const renderNavItem = (item: NavItem) => {
                       key={child.label}
                       className="w-full hover:text-accents-yellow-3"
                     >
-                      <NavigationMenu className="w-full">
+                      <NavigationMenu className="w-full pr-8">
                         <NavigationMenuList>
                           <NavigationMenuItem>
                             <NavigationMenuTrigger>
