@@ -20,24 +20,30 @@ const renderNavItem = (item: NavItem) => {
         <NavigationMenuList>
           <NavigationMenuItem>
             <NavigationMenuTrigger>{item.label}</NavigationMenuTrigger>
-            <NavigationMenuContent className="pl-4 pr-12 text-text-light-1">
+            <NavigationMenuContent className="px-4 text-text-light-1">
               <ul>
                 {item.children.map((child) =>
                   child.children ? (
-                    <li key={child.label}>
-                      <NavigationMenu className="hover:text-accents-yellow-3">
+                    <li
+                      key={child.label}
+                      className="w-full hover:text-accents-yellow-3"
+                    >
+                      <NavigationMenu className="w-full">
                         <NavigationMenuList>
                           <NavigationMenuItem>
                             <NavigationMenuTrigger>
                               {child.label}
                             </NavigationMenuTrigger>
-                            <NavigationMenuContent className="pl-4 pr-12 text-text-light-1">
+                            <NavigationMenuContent className="px-4 text-text-light-1">
                               <ul>
                                 {child.children.map((subChild) => (
-                                  <li key={subChild.label}>
+                                  <li
+                                    key={subChild.label}
+                                    className="w-full hover:text-accents-yellow-3"
+                                  >
                                     <Link
                                       href={subChild.href!}
-                                      className="hover:text-accents-yellow-3"
+                                      className="w-full pr-8"
                                     >
                                       {subChild.label}
                                     </Link>
@@ -50,11 +56,11 @@ const renderNavItem = (item: NavItem) => {
                       </NavigationMenu>
                     </li>
                   ) : (
-                    <li key={child.label}>
-                      <Link
-                        href={child.href!}
-                        className="hover:text-accents-yellow-3"
-                      >
+                    <li
+                      key={child.label}
+                      className="w-full hover:text-accents-yellow-3"
+                    >
+                      <Link href={child.href!} className="w-full pr-8">
                         {child.label}
                       </Link>
                     </li>

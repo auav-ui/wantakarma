@@ -105,7 +105,7 @@ const NavbarMobile = () => {
                   />
                 </div>
                 <div
-                  className={`${heightStyle} grid pl-4 transition-all duration-300 origin-top overflow-hidden`}
+                  className={`${heightStyle} grid pl-4 origin-top overflow-hidden`}
                 >
                   {item.children.map((child, childIndex) => {
                     if (!child.children || child.children.length === 0) {
@@ -147,7 +147,7 @@ const NavbarMobile = () => {
                           />
                         </div>
                         <div
-                          className={`${childHeightStyle} grid pl-4 transition-all duration-300 origin-top overflow-hidden`}
+                          className={`${childHeightStyle} grid pl-4 origin-top overflow-hidden`}
                         >
                           {child.children.map((grandchild, grandchildIndex) => (
                             <Link
