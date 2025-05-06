@@ -11,7 +11,7 @@ const OurValuesMobile = () => {
           />
         </div>
         <div className="bg-gradient-to-br from-accents-grey-1 to-accents-grey-3 w-6 h-6 border-r-4 border-l-4 border-accents-grey-3" />
-        <div className="text-b3 px-6 py-4 leading-snug flex justify-center items-center text-center w-80 rounded-[46px] border-9 border-accents-yellow-3 bg-accents-grey-4">
+        <div className="text-b3 p-6 leading-snug flex justify-center items-center text-center w-80 rounded-[46px] border-4 border-accents-yellow-3 bg-accents-grey-4">
           Lorem ipsum massa massa ut nisi interdum aenean nam condimentum cursus
           posuere ultricies vestibulum risus semper posuere accumsan eu vitae
           pharetra ut et in quam.
@@ -27,7 +27,7 @@ const OurValuesMobile = () => {
           />
         </div>
         <div className="bg-gradient-to-br from-accents-grey-1 to-accents-grey-3 w-6 h-6 border-r-4 border-l-4 border-accents-grey-3" />
-        <div className="text-b3 px-6 py-4 leading-snug flex justify-center items-center text-center w-80 rounded-[46px] border-9 border-accents-yellow-3 bg-accents-grey-4">
+        <div className="text-b3 p-6 leading-snug flex justify-center items-center text-center w-80 rounded-[46px] border-4 border-accents-yellow-3 bg-accents-grey-4">
           Lorem ipsum massa massa ut nisi interdum aenean nam condimentum cursus
           posuere ultricies vestibulum risus semper posuere accumsan eu vitae
           pharetra ut et in quam.
@@ -43,7 +43,7 @@ const OurValuesMobile = () => {
           />
         </div>
         <div className="bg-gradient-to-br from-accents-grey-1 to-accents-grey-3 w-6 h-6 border-r-4 border-l-4 border-accents-grey-3" />
-        <div className="text-b3 px-6 py-4 leading-snug flex justify-center items-center text-center w-80 rounded-[46px] border-9 border-accents-yellow-3 bg-accents-grey-4">
+        <div className="text-b3 p-6 leading-snug flex justify-center items-center text-center w-80 rounded-[46px] border-4 border-accents-yellow-3 bg-accents-grey-4">
           Lorem ipsum massa massa ut nisi interdum aenean nam condimentum cursus
           posuere ultricies vestibulum risus semper posuere accumsan eu vitae
           pharetra ut et in quam.
