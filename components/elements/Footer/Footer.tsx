@@ -1,4 +1,5 @@
-import { Link, MapPin } from "lucide-react";
+import { MapPin } from "lucide-react";
+import Link from "next/link";
 
 const Footer = () => {
   return (
