@@ -5,22 +5,17 @@ const Sponsors = () => {
   const [bottomOffset, setBottomOffset] = useState(0);
 
   useEffect(() => {
-    const animationSpeed = 0.5; // pixels per frame
+    const animationSpeed = 0.1;
 
-    // Animation logic
     const animate = () => {
-      // Move top image from left to right
       setTopOffset((prevOffset) => {
-        // Reset position when image has moved by its full width
         if (prevOffset >= 100) {
           return 0;
         }
         return prevOffset + animationSpeed;
       });
 
-      // Move bottom image from right to left
       setBottomOffset((prevOffset) => {
-        // Reset position when image has moved by its full width
         if (prevOffset >= 100) {
           return 0;
         }
@@ -28,7 +23,7 @@ const Sponsors = () => {
       });
     };
 
-    const animationId = setInterval(animate, 16); // ~60fps
+    const animationId = setInterval(animate, 16);
 
     return () => clearInterval(animationId);
   }, []);
@@ -72,7 +67,6 @@ const Sponsors = () => {
               className="inline-block w-auto"
             />
           </div>
-          {/* This visible image sets the container height */}
           <img
             src="/assets/sponsors.webp"
             alt=""
