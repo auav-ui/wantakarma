@@ -2,9 +2,10 @@ import React, { useCallback, useEffect, useState } from "react";
 import { EmblaCarouselType, EmblaOptionsType } from "embla-carousel";
 import { PrevButton, NextButton, usePrevNextButtons } from "./CarouselButtons";
 import useActivitiesCarousel from "embla-carousel-react";
+import { SlidesProps } from "../interface";
 
 type PropType = {
-  slides: number[];
+  slides: SlidesProps[];
   options?: EmblaOptionsType;
 };
 
@@ -41,7 +42,7 @@ const ActivitiesCarousel: React.FC<PropType> = (props) => {
     <div className="max-w-full md:py-12">
       <div className="relative" ref={emblaRef}>
         <div className="flex">
-          {slides.map((index, idx) => (
+          {slides.map((slide, idx) => (
             <div
               className="relative flex-shrink-0 flex-grow-0 min-w-[26rem] w-[50vw] px-10"
               key={idx}
@@ -51,7 +52,7 @@ const ActivitiesCarousel: React.FC<PropType> = (props) => {
                   selectedIndex === idx || "scale-75"
                 } min-h-[13rem] h-[25vw] bg-blue-50 rounded-4xl lg:rounded-[48px] border-8 lg:border-12 border-accents-yellow-3 flex items-center justify-center text-2xl font-semibold text-blue-600 transition duration-300`}
               >
-                {index + 1}
+                {idx + 1}
               </div>
               <div
                 className={`${
@@ -59,8 +60,8 @@ const ActivitiesCarousel: React.FC<PropType> = (props) => {
                 } absolute w-12 h-12 border-6 border-accents-yellow-3 rounded-full bg-accents-grey-4 left-1/2 -bottom-[7.25rem] md:-bottom-[4.25rem] lg:-bottom-[4.375rem] -translate-x-1/2 translate-y-1/2 transition duration-500`}
               >
                 <div className="w-full h-full relative flex justify-center items-center">
-                  <h1 className="absolute -bottom-6 font-tt-squares text-h5 text-center block w-96 translate-y-full">
-                    12 Agustus 2005
+                  <h1 className="absolute -bottom-4 md:-bottom-6 font-tt-squares text-b3 md:text-h5 text-center block w-96 translate-y-full">
+                    {slide.date}
                   </h1>
                 </div>
               </div>
@@ -73,10 +74,25 @@ const ActivitiesCarousel: React.FC<PropType> = (props) => {
         </div>
       </div>
       <div className="w-full h-2 lg:h-3 bg-accents-yellow-3 my-16" />
-      <div className="flex justify-center">
-        <h1 className="font-tt-squares text-h2">
-          Kontes Robot Terbang Indonesia 2024
-        </h1>
+      <div className="relative flex flex-col items-center">
+        <div className="w-72 md:w-[32rem] max-md:mb-8 mt-4">
+          <h1 className="text-center font-tt-squares text-h4 md:text-h2 py-2">
+            {slides[selectedIndex].event}
+          </h1>
+          <p className="text-center text-b5 md:text-b4">
+            {slides[selectedIndex].desc}
+          </p>
+        </div>
+        <img
+          src="/misc/spinner.webp"
+          alt="spinner"
+          className="md:absolute md:translate-x-[32rem] w-40 md:w-96 animate-spin"
+        />
+        <img
+          src="/misc/spinner.webp"
+          alt="spinner"
+          className="max-md:hidden absolute -translate-x-[32rem] w-40 w-96 animate-spin"
+        />
       </div>
     </div>
   );

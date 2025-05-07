@@ -6,6 +6,7 @@ import Slider from "./sections/Slider";
 import Subteams from "./sections/Subteams";
 import OurValues from "./sections/OurValues";
 import Activities from "./sections/Activities";
+import Sponsors from "./sections/Sponsors";
 
 const LandingModule = () => {
   const [isLandingShown, setIsLandingShown] = useState<boolean>(false);
@@ -27,6 +28,7 @@ const LandingModule = () => {
           <Subteams />
           <OurValues />
           <Activities />
+          <Sponsors />
           <Footer />
         </>
       )}
