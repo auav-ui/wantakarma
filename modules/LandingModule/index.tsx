@@ -5,6 +5,7 @@ import Footer from "@/components/elements/Footer/Footer";
 import Slider from "./sections/Slider";
 import Subteams from "./sections/Subteams";
 import OurValues from "./sections/OurValues";
+import Activities from "./sections/Activities";
 
 const LandingModule = () => {
   const [isLandingShown, setIsLandingShown] = useState<boolean>(false);
@@ -25,6 +26,7 @@ const LandingModule = () => {
           <Hero />
           <Subteams />
           <OurValues />
+          <Activities />
           <Footer />
         </>
       )}
