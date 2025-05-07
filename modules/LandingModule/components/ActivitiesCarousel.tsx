@@ -91,7 +91,7 @@ const ActivitiesCarousel: React.FC<PropType> = (props) => {
         <img
           src="/misc/spinner.webp"
           alt="spinner"
-          className="max-md:hidden absolute -translate-x-[32rem] w-40 w-96 animate-spin"
+          className="max-md:hidden absolute -translate-x-[32rem] w-96 animate-spin"
         />
       </div>
     </div>

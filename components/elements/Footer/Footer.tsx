@@ -1,4 +1,4 @@
-import { InstagramIcon, MapPin, Pin, PinIcon } from "lucide-react";
+import { Link, MapPin } from "lucide-react";
 
 const Footer = () => {
   return (
@@ -18,18 +18,18 @@ const Footer = () => {
           Kecamatan Beji, Kota Depok, Jawa Barat 16425
         </h1>
         <div className="flex max-lg:justify-center flex-row-reverse gap-x-6">
-          <a href="/">
+          <Link href="/">
             <img src="/vectors/facebook.svg" alt="facebook" />
-          </a>
-          <a href="/">
+          </Link>
+          <Link href="/">
             <img src="/vectors/youtube.svg" alt="youtube" />
-          </a>
-          <a href="/">
+          </Link>
+          <Link href="/">
             <img src="/vectors/linkedin.svg" alt="linkedin" />
-          </a>
-          <a href="/">
+          </Link>
+          <Link href="/">
             <img src="/vectors/instagram.svg" alt="instagram" />
-          </a>
+          </Link>
         </div>
       </div>
       <h1 className="lg:hidden text-b4 sm:text-h6 text-center font-tt-squares font-bold">
