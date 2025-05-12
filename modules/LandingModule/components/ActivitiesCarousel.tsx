@@ -44,13 +44,13 @@ const ActivitiesCarousel: React.FC<PropType> = (props) => {
         <div className="flex">
           {slides.map((slide, idx) => (
             <div
-              className="relative flex-shrink-0 flex-grow-0 min-w-[26rem] w-[50vw] px-10"
+              className="relative flex-shrink-0 flex-grow-0 min-w-[26rem] max-w-[40rem] w-[50vw] px-10"
               key={idx}
             >
               <div
                 className={`${
-                  selectedIndex === idx || "scale-75"
-                } min-h-[13rem] h-[25vw] bg-blue-50 rounded-4xl lg:rounded-[48px] border-8 lg:border-12 border-accents-yellow-3 flex items-center justify-center text-2xl font-semibold text-blue-600 transition duration-300`}
+                  selectedIndex === idx || "scale-75 opacity-50"
+                } min-h-[13rem] max-h-[20rem] h-[25vw] bg-blue-50 rounded-4xl lg:rounded-[48px] border-8 lg:border-12 border-accents-yellow-3 flex items-center justify-center text-2xl font-semibold text-blue-600 transition duration-300`}
               >
                 {idx + 1}
               </div>
@@ -68,7 +68,7 @@ const ActivitiesCarousel: React.FC<PropType> = (props) => {
             </div>
           ))}
         </div>
-        <div className="md:absolute flex justify-center space-x-16 md:space-x-[50vw] items-center top-1/2 translate-y-1/2 md:-translate-y-1/2 left-1/2 md:-translate-x-1/2">
+        <div className="md:absolute flex justify-center space-x-16 md:space-x-[50vw] lg:space-x-[42rem] items-center top-1/2 translate-y-1/2 md:-translate-y-1/2 left-1/2 md:-translate-x-1/2">
           <PrevButton onClick={onPrevButtonClick} disabled={prevBtnDisabled} />
           <NextButton onClick={onNextButtonClick} disabled={nextBtnDisabled} />
         </div>

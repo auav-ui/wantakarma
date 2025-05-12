@@ -5,9 +5,9 @@ const Subteams = () => {
         OUR SUBTEAMS
       </h1>
       <div className="flex justify-center relative">
-        <div className="grid max-md:grid-rows-3 md:grid-cols-3 gap-4 xl:gap-24 md:py-16 xl:py-40 z-10">
-          <div className="relative flex justify-center w-56 h-56 xl:w-80 xl:h-80 group">
-            <div className="w-full h-full max-md:scale-75 p-10 bg-accents-yellow-3 rounded-[64px] md:group-hover:scale-[80%] origin-top transition z-10">
+        <div className="grid max-md:grid-rows-3 md:grid-cols-3 gap-4 xl:gap-24 md:py-16 xl:py-24 z-10">
+          <div className="relative flex justify-center w-48 h-48 xl:w-80 xl:h-80 group">
+            <div className="w-full h-full max-md:scale-75 p-10 bg-accents-yellow-3 rounded-[52px] lg:rounded-[64px] md:group-hover:scale-[80%] origin-top transition z-10">
               <img
                 src="/subteams/vishmakarma.png"
                 alt="vishmakarma"
@@ -18,8 +18,8 @@ const Subteams = () => {
               VISHMAKARMA
             </p>
           </div>
-          <div className="relative flex justify-center w-56 h-56 xl:w-80 xl:h-80 group">
-            <div className="w-full h-full max-md:scale-75 p-10 bg-accents-yellow-3 rounded-[64px] md:group-hover:scale-[80%] origin-top transition z-10">
+          <div className="relative flex justify-center w-48 h-48 xl:w-80 xl:h-80 group">
+            <div className="w-full h-full max-md:scale-75 p-10 bg-accents-yellow-3 rounded-[52px] lg:rounded-[64px] md:group-hover:scale-[80%] origin-top transition z-10">
               <img
                 src="/subteams/vishmakarma.png"
                 alt="vishmakarma"
@@ -30,8 +30,8 @@ const Subteams = () => {
               ANTASENA
             </p>
           </div>
-          <div className="relative flex justify-center w-56 h-56 xl:w-80 xl:h-80 group">
-            <div className="w-full h-full max-md:scale-75 p-10 bg-accents-yellow-3 rounded-[64px] md:group-hover:scale-[80%] origin-top transition z-10">
+          <div className="relative flex justify-center w-48 h-48 xl:w-80 xl:h-80 group">
+            <div className="w-full h-full max-md:scale-75 p-10 bg-accents-yellow-3 rounded-[52px] lg:rounded-[64px] md:group-hover:scale-[80%] origin-top transition z-10">
               <img
                 src="/subteams/vishmakarma.png"
                 alt="vishmakarma"
